@@ -10,7 +10,7 @@ RUN docker-php-ext-install pdo pdo_mysql
 COPY php_uploads.ini /usr/local/etc/php/conf.d/
 
 # Kopiere die Anwendungsdateien in das Containerverzeichnis
-COPY . /var/www/html/
+COPY ./app /var/www/html/
 
 # Setze das Arbeitsverzeichnis
 WORKDIR /var/www/html
