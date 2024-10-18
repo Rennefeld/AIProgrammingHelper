@@ -1,3 +1,5 @@
+https://chatgpt.com/share/6712f127-218c-8006-a0f9-0e51516103cf
+
 Below is an updated implementation that integrates a function to store the analytics data in the database before displaying it on the frontend. This includes both the backend and frontend code to ensure all functionalities work as required. 
 
 ### Updated Project Structure
