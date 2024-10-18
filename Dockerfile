@@ -1,7 +1,7 @@
 # Dockerfile
 
 # Verwende ein PHP-Image
-FROM php:8.1-apache
+FROM php:7.4-apache
 
 # Installiere Abhängigkeiten, falls benötigt
 RUN docker-php-ext-install pdo pdo_mysql
