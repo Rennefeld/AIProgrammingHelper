@@ -1,7 +1,5 @@
 # HJRSocialMedia
 
-Hier ist die aktualisierte Version der Anwendung mit einer `.env`-Datei zur Speicherung der App-ID und des App-Secrets sowie der Möglichkeit, Bilder oder Videos für Reddit hochzuladen. Ich habe die Anwendung so angepasst, dass sie die Umgebungsvariablen aus der `.env`-Datei lädt und auch lokale Pfade für den Upload verwendet. 
-
 ### Verzeichnisstruktur
 
 ```plaintext
@@ -400,7 +398,3 @@ COPY ./app /var/www/html
 
 - **Lokale Pfade**: Der Upload von Bildern oder Videos erfordert die Verwendung von lokalen Pfaden, die auf dem Server zugänglich sind. Wenn ein Benutzer ein Bild oder Video hochlädt, wird es auf dem Server gespeichert, bevor es an die API der sozialen Plattform gesendet wird.
 - **URL-Anpassung**: In der `post.php`-Datei wird der lokale Pfad verwendet, um die hochgeladenen Dateien an die APIs der sozialen Medien zu übergeben.
-
-### Fazit
-
-Mit dieser vollständigen Implementierung sollten Sie in der Lage sein, Ihre Anwendung erfolgreich auszuführen, einschließlich der Upload-Funktionalität für Reddit, und die API-Integrationen für alle anderen Plattformen. Stellen Sie sicher, dass Sie die Umgebungsvariablen in der `.env`-Datei korrekt einrichten und die erforderlichen Berechtigungen in den jeweiligen Entwicklerportalen der sozialen Plattformen konfigurieren.
