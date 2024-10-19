@@ -98,10 +98,14 @@ class AIProgrammingAssistant {
     }
 
     private function addToConversation($type) {
-        echo ($type === 'human' ? "Enter your message: " : "Enter AI's response: ");
+        echo ($type === 'human' ? "Enter your message" : "Enter AI's response");
+        echo " (type '/done' on a new line when finished):\n";
         $message = '';
-        while ($line = fgets(STDIN)) {
-            if (trim($line) === 'EOF') break;
+        while (($line = fgets(STDIN)) !== false) {
+            $trimmedLine = trim($line);
+            if ($trimmedLine === '/done') {
+                break;
+            }
             $message .= $line;
         }
         $formattedMessage = date('Y-m-d H:i:s') . " - " . ucfirst($type) . ":\n" . $message . "\n";
